@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Recarga facíl</title>
+    <link rel="shortcut icon" href="favicon.ico">
+     
+    <!-- fuente --> 
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'> 
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+      <script type='text/javascript' src='/jquery/1.10.2/jquery.min.js'></script>
+      <script type='text/javascript' src='/bootstrap/js/bootstrap.min.js'></script>
+  
+  </head>
+  <body>
+    <header>
+    <!--  menu superior  -->
+      <div class="barra_sup"></div>
+        <div class="container">
+        <div class="col-xs-3 img_central"><img src="imagenes/logo_header.png" width="250"></div>
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+          <div class="row">
+            <a href="#"><div class="col-xs-2 menu_sup">Inicio</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup">Quiénes Somos</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup">Ayuda</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup">Contacto</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup"><img src="imagenes/icono_activate.png" width="15"> Actívate</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup"><img src="imagenes/icono_ingresa.png" width="15"> Ingresa</div></a>
+          </div>
+        </div>
+      </div>
+       
+       <!--  Fin menu superior  -->
+
+       <div class="container">
+        <div class="col-xs-12 titulo1">
+          Recarga aquí tu celular prepago
+        </div>
+      </div>
+       
+        <!-- menu compañias -->
+       
+        <div class="container">
+        <div class="col-xs-12">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab-1" class="primera" data-toggle="tab" aria-expanded="true"><div class="movistar"></div></a></li>
+          <li><a href="#tab-2" data-toggle="tab"><div class="entel"></div></a></li>
+          <li><a href="#tab-3" data-toggle="tab"><div class="claro"></div></a></li>
+          <li><a href="#tab-4" data-toggle="tab"><div class="virgin"></div></a></li>
+          <li><a href="#tab-5" data-toggle="tab"><div class="wow"></div></a></li>
+          <li><a href="#tab-6" data-toggle="tab"><div class="falabella"></div></a></li>
+          <li><a href="#tab-7" data-toggle="tab"><div class="vtr"></div></a></li>
+          <li><a href="#tab-8" data-toggle="tab"><div class="colo"></div></a></li>
+          <li><a href="#tab-9" data-toggle="tab"><div class="gtd"></div></a></li>
+          <li><a href="#tab-10" data-toggle="tab"><div class="gtel"></div></a></li>
+          <li><a href="#tab-11" class="ultima" data-toggle="tab"><div class="tip"></div></a></li>
+          <li><a href="#tab-12" class="tambien" data-toggle="tab"><div class="directv">Recarga también: </div></a></li>
+        </ul>
+        
+        <!-- contenidos compañias -->
+          
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="tab-1">
+                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $100 y $20.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent"></div>
+
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-2">
+                                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $500 y $20.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent2"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-3">
+                                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <select type="text" class="form-control monto_carga">
+                                <option>Monto</option>
+                                <option>$750</option>
+                                <option>$1.000</option>
+                                <option>$2.000</option>
+                                <option>$2.500</option>
+                                <option>$3.600</option>
+                                <option>$5.000</option>
+                                <option>$10.000</option>
+                                <option>$15.000</option>
+                                <option>$25.000</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent3"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-4">                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $500 y $45.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent4"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div></div>
+              <div class="tab-pane fade" id="tab-5">
+                                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <select type="text" class="form-control monto_carga">
+                                <option>Monto</option>
+                                <option>$1.000</option>
+                                <option>$3.000</option>
+                                <option>$4.000</option>
+                                <option>$5.000</option>
+                                <option>$7.000</option>
+                                <option>$10.000</option>
+                                <option>$12.000</option>
+                                <option>$15.000</option>
+                                <option>$20.000</option>
+                                <option>$25.000</option>
+                                <option>$30.000</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent5"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-6">
+                                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $200 y $20.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent6"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-7">                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $100 y $20.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent7"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+                  </div>
+              <div class="tab-pane fade" id="tab-8">
+                                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $500 y $25.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent8"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-9">                  <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $400 y $20.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent9"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+                  </div>
+             <div class="tab-pane fade" id="tab-10">
+                                 <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $500 y $25.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent10"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+             </div>
+             <div class="tab-pane fade" id="tab-11">
+                                 <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3 sin_padding">Ingresa tu número:</div>
+                        <div class="col-xs-2 pad_extrta">Monto a recargar:</div>
+                        <div class="col-xs-3 pad_extrta">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1 pequeno1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="56" disabled>
+                            </div>
+                            <div class="col-xs-1 pequeno1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="44" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <select type="text" class="form-control monto_carga">
+                                <option>Monto</option>
+                                <option>$1.000</option>
+                                <option>$2.000</option>
+                                <option>$3.000</option>
+                                <option>$4.000</option>
+                                <option>$5.000</option>
+                                <option>$6.000</option>
+                                <option>$7.000</option>
+                                <option>$8.000</option>
+                                <option>$9.000</option>
+                                <option>$10.000</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2 pad_extrta">Ej: 91234567</div>
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-3 pad_extrta">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent11"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+             </div>
+             <div class="tab-pane fade" id="tab-12">
+                                 <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                      <div class="row instruccion">
+                        
+                        <div class="col-xs-3">Ingresa tu número:</div>
+                        <div class="col-xs-2">Monto a recargar:</div>
+                        <div class="col-xs-3">Correo electrónico:</div>
+                        <div class="col-xs-4"></div>
+                      </div>
+                      <div class="row formulario">
+                       
+                            <div class="col-xs-1">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="09" disabled>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control cel" placeholder="">
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control monto_carga" value="$" placeholder="">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="email" class="form-control mail" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                        
+                      </div>
+                      <div class="row instruccion_baja">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">Ej: 91234567</div>
+                        <div class="col-xs-2">Entre $100 y $20.000</div>
+                        <div class="col-xs-3">El correo electrónico es opcional </div>
+                        <div class="col-xs-4"></div>
+                      </div>
+
+                      <div id="includedContent12"></div>
+                      
+                    </div>
+                    <div class="col-xs-1"></div>
+                  </div>
+             </div>
+           </div>
+        </div>
+      </div>
+      
+    </header>
+
+
+<a class='flotante twitter' href='#' ><img src="imagenes/logo_twitter.png" height="13"></a>
+<a class='flotante facebook' href='#' ><img src="imagenes/logo_face.png" height="20"></a>
+
+<!-- boton compañias -->
+
+<div class="container compa">
+  <a href="#"><div class="col-xs-3 btn_serv"><img src="imagenes/icono_celular.png" height="30">Telefonía Móvil</div></a>
+  <a href="#"><div class="col-xs-3 btn_serv"><img src="imagenes/icono_tv.png" height="30">Televisión</div></a>
+  <a href="#"><div class="col-xs-3 btn_serv"><img src="imagenes/icono_telefono.png" height="30">Telefonía Fija</div></a>
+  <a href="#"><div class="col-xs-3 btn_serv"><img src="imagenes/icono_banda_acha.png" height="30">Banda Ancha</div></a>
+</div>
+
+
+
+    <div class="container">
+      <div class="col-xs-12 tit_servicios"><img src="imagenes/iconos_medios_pago.png"></div>
+    </div>
+    <div class="container centrar">
+      <div class="col-xs-12 tit_servicios"><h1>Nuestros Servicios</h1></div>
+    </div>
+
+<!--servicios-->
+    
+    <div class="row servicios">
+      <div class="col-xs-1 movil cuadrado"></div>
+      <div class="col-xs-5 movil cuadrado">
+        <img class="img_sube" src="imagenes/burbuja_movil.png">
+        <br><h2>Telefonía Móvil</h2><p>Recarga Fácil es una manera amigable, entretenida, rápida y segura de recargar tu celular. Acumularás Puntos Recarga Fácil en cada transacción, que podrás canjear por nuevas recargas para que hables totalmente gratis en una próxima oportunidad.</p>
+        <img src="imagenes/iconos_telefonia-movil.png">
+      </div>
+      <div class="col-xs-5 prepago cuadrado"><img class="img_sube" src="imagenes/burbuja_tv.png"><br><h2>TV Prepago</h2><p>No te quedes sin ver la mejor televisión a través de tu TV Prepago favorito y recarga tu cuenta acumulando Puntos Recarga Fácil para que no te pierdas la emoción de ver películas, series, deportes y noticias 
+      cuando tú quieras.</p>
+        <img src="imagenes/iconos_tv-prepago.png">
+      </div>
+      <div class="col-xs-1 prepago cuadrado"></div>
+    </div>
+
+    <div class="row servicios">
+      <div class="col-xs-1 fija cuadrado"></div>
+      <div class="col-xs-5 fija cuadrado"><img class="img_sube" src="imagenes/burbuja_telefonia-fija.png"><br><h2>Telefonía Fija</h2><p>Los minutos para hablar con quien más quieres no se deben acabar. En Recarga Fácil podrás recargar tu número de teléfono fijo en menos de 5 minutos y seguir hablando, hablando y hablando.</p>
+       <img src="imagenes/iconos_telefonia-fija.png">
+      </div>
+      <div class="col-xs-5 ancha cuadrado"><img class="img_sube" src="imagenes/burbuja_banda-ancha.png"><br><h2>Banda Ancha Móvil</h2><p>En Recarga Fácil podrás recargar tu banda ancha móvil a cualquier hora para que no te quedes sin navegar por Internet. ¡Es simple, rápido, muy seguro y acumulas Puntos Recarga Fácil!</p>
+        <img src="imagenes/iconos_banda_ancha.png">
+      </div>
+      <div class="col-xs-1 ancha cuadrado"></div>
+    </div>
+
+<!-- Fin servicios -->
+    
+    <footer>
+      <div class="container">
+        <div class="col-xs-3"><img src="imagenes/logo_footer.png"></div>
+        <div class="col-xs-6"></div>
+        <div class="col-xs-3"><img src="imagenes/logo_multicaja_footer.png"></div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script> 
+      $(function(){
+      $("#includedContent").load("canjea.html"); 
+      });
+    </script>
+    <script> 
+      $(function(){
+      $("#includedContent2").load("canjea.html"); 
+      });
+    </script>
+        <script> 
+      $(function(){
+      $("#includedContent3").load("canjea.html"); 
+      });
+    </script>
+        <script> 
+      $(function(){
+      $("#includedContent4").load("canjea.html"); 
+      });
+    </script> 
+        <script> 
+      $(function(){
+      $("#includedContent5").load("canjea.html"); 
+      });
+    </script> 
+        <script> 
+      $(function(){
+      $("#includedContent6").load("canjea.html"); 
+      });
+    </script> 
+        <script> 
+      $(function(){
+      $("#includedContent7").load("canjea.html"); 
+      });
+    </script> 
+        <script> 
+      $(function(){
+      $("#includedContent8").load("canjea.html"); 
+      });
+    </script> 
+        <script> 
+      $(function(){
+      $("#includedContent9").load("canjea.html"); 
+      });
+    </script> 
+        <script> 
+      $(function(){
+      $("#includedContent10").load("canjea.html"); 
+      });
+    </script> 
+        <script> 
+      $(function(){
+      $("#includedContent11").load("canjea.html"); 
+      });
+    </script> 
+        <script> 
+      $(function(){
+      $("#includedContent12").load("canjea.html"); 
+      });
+    </script> 
+
+  </body>
+</html>

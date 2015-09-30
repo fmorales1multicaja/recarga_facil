@@ -1,0 +1,486 @@
+body {
+	margin: 0px auto;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	min-width: 1240px;
+}
+
+.container {
+	 max-width: none !important;
+	 width: 1240px;	
+}
+
+.centrar {
+
+	margin: 0px auto;
+}
+.menu_celulares {
+	padding: 0px 30px;
+}
+
+header {
+	background-image: url("../imagenes/fondo_header1.png");
+	height: 500px;
+}
+.img_central {
+	margin-top: 10px;
+	padding-left: 0px;
+}
+.barra_sup {
+	height: 5px;
+	background: #09B0E5;
+}
+.menu_sup {
+	background-color: #09B0E5;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	padding: 8px 0px;
+	vertical-align:text-bottom;
+}
+a:hover .menu_sup {
+	background-color: #508cb6;
+}
+.titulo1{
+	color: #09B0E5;
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 45px;
+	letter-spacing: 1.5px;
+}
+
+.servicios {
+	color: white;
+	text-align: center;
+	margin:0px;
+	font-size: 20px;
+}
+
+.servicios p {
+	padding: 0px 50px;
+}
+
+.sin_padding {
+	padding: 0px;
+}
+ 
+.movil{
+	background-color: #09B0E5;
+}
+.prepago{
+	background-color: #f26634;
+
+}
+.fija{
+	background-color: #ff9933;
+
+}
+.ancha{
+	background-color: #a0cc56;
+}
+
+.img_sube {
+	margin-top: -50px;
+}
+
+.cuadrado {
+	height: 340px;
+}
+
+.tit_servicios{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+a .btn_serv {
+	background: #999;
+	padding: 5px 0px 5px 0px;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	margin-bottom: 10px;
+	border-bottom: 5px solid white;
+}
+
+a:hover .btn_serv {
+	background: #666;
+	border-bottom: 5px solid #09B0E5;
+}
+
+.btn_serv img {
+	padding: 0px 5px 6px 0px;	
+}
+
+.nav-tabs>li>a {
+	border-radius: 0px;
+	width: 90px;
+	text-align: center;
+}
+
+
+.active a.tambien {
+	background-color: red;
+}
+
+.nav-tabs li.active a.primera{
+	border-left: 0px;
+
+}
+
+.nav-tabs li.active a.ultima{
+	border-right: 0px;
+}
+.nav-tabs li a.primera{
+	border-left: 0px;
+
+}
+
+.nav-tabs {
+	border: 1px solid #ddd;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border-top: 0px;
+	border-bottom: 3px solid white;
+	margin-right: 0px;
+	border-right: 1px solid #ddd;
+}
+.tab-content {
+	background: white;
+	border: 1px solid #ddd;
+	border-top: 0px;
+}
+
+.nav .nav-tabs .active {
+	background: black;
+}
+
+.nav-tabs>li>a:hover{
+	border-bottom: 0px;
+}
+
+.compa {
+	margin-top: -20px;
+}
+
+.instruccion{
+	padding: 20px 0 5px 0;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.form-control[disabled], fieldset[disabled] .form-control {
+	text-align: center;
+}
+
+.btn-recarga {
+	width: 200px;
+	background-color: #09B0E5;
+	color:white;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 0px;
+}
+
+.btn-recarga:hover {
+	color: white;
+	background: #508CB6;
+}
+
+.instruccion_baja {
+	color: gray;
+	padding-bottom: 30px;
+	border-bottom: 3px lightgray dotted;
+	margin-bottom: 30px;   
+}
+
+.pregunta_tol {
+	text-align: center;
+	padding: 0px;
+}
+
+.pregunta_tol button {
+	border:0px;
+	padding: 0px;
+}
+
+.pregunta_tol .btn-default:hover {
+	background-color: white;
+}
+.tooltip-inner {
+	background-color: #09B0E5;
+	font-weight: normal;
+	border: 3px solid white;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.tooltip-arrow {
+   display: none;
+}
+
+.canjeo {
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	padding-right: 0px;
+}
+
+.canjeo img {
+	padding: 0px 5px 5px 0px;
+}
+
+.ganas {
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+}
+
+.ganas img {
+	padding: 0px 5px 5px 0px;
+}
+
+.tipo_celeste {
+	color:#09B0E5;
+}
+
+.ayuda_canje {
+	font-weight: bold;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.font_gris {
+	color: gray;
+	font-weight: normal;
+	padding-left: 10px;
+}
+
+.puntos {
+	width: 35px;
+	border: 0px;
+	border-bottom: 1px solid #09B0E5;
+}
+
+.pequeno1 {
+	padding: 0px 5px;
+	width: 50px;
+}
+
+.pad_extrta {
+	padding-left: 30px;
+}
+
+.movistar {
+	background-image: url("../imagenes/logo_movistar_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .movistar {
+	background-image: url("../imagenes/movistar_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.entel {
+	background-image: url("../imagenes/logo_entel_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .entel {
+	background-image: url("../imagenes/logo_entel_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.claro {
+	background-image: url("../imagenes/logo_claro_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .claro {
+	background-image: url("../imagenes/logo_claro_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.virgin {
+	background-image: url("../imagenes/logo_virgin_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .virgin {
+	background-image: url("../imagenes/logo_virgin_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.wow {
+	background-image: url("../imagenes/logo_wow_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .wow {
+	background-image: url("../imagenes/logo_wow_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.falabella {
+	background-image: url("../imagenes/logo_falabella_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 55px auto;
+	background-position: center;
+}
+
+.active .falabella {
+	background-image: url("../imagenes/logo_falabella_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.vtr {
+	background-image: url("../imagenes/logo_vtr_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 35px auto;
+	background-position: center;
+}
+
+.active .vtr {
+	background-image: url("../imagenes/logo_vtr_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.colo {
+	background-image: url("../imagenes/logo_colo_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .colo {
+	background-image: url("../imagenes/logo_colo_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.gtd {
+	background-image: url("../imagenes/logo_gtd_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .gtd {
+	background-image: url("../imagenes/logo_gtd_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.gtel {
+	background-image: url("../imagenes/logo_gtel_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .gtel {
+	background-image: url("../imagenes/logo_gtel_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.tip {
+	background-image: url("../imagenes/logo_tip_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: center;
+}
+
+.active .tip {
+	background-image: url("../imagenes/logo_tip_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.directv {
+	background-image: url("../imagenes/logo_directv_gris.png");
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: right;
+	padding-left: 10px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+.active .directv {
+	background-image: url("../imagenes/logo_directv_color.png");
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+
+.nav-tabs li a.tambien{
+	width: 166px;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	border-right:0px; 
+	border-left: 1px solid #ddd;	
+	margin: 0px;
+}
+
+.flotante {
+    	display:scroll;
+        position:fixed;
+        right:0px;
+        z-index: 1000;
+}
+
+.flotante.facebook {
+	background-image: url("../imagenes/fondo_face.png");
+	height: 80px;
+	bottom:370px;
+	padding-top: 25px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.flotante.twitter {
+	background-image: url("../imagenes/fondo_tw.png");
+	height: 80px;
+	bottom:310px;
+	padding-top: 28px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+a.flotante:hover{
+	z-index:1001;
+}
