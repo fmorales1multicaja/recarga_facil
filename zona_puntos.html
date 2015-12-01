@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Recarga facíl</title>
+    <link rel="shortcut icon" href="favicon.ico">
+     
+    <!-- fuente --> 
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'> 
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+      <script type='text/javascript' src='/jquery/1.10.2/jquery.min.js'></script>
+      <script type='text/javascript' src='/bootstrap/js/bootstrap.min.js'></script>
+  
+  </head>
+  <body>
+    <header class="zonapuntos">
+    <!--  menu superior  -->
+      <div class="barra_sup"></div>
+        <div class="container">
+        <div class="col-xs-3 img_central"><img src="imagenes/logo_header.png" width="250"></div>
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+          <div class="row">
+            <a href="#"><div class="col-xs-2 menu_sup">Inicio</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup">Quiénes Somos</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup">Ayuda</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup">Contacto</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup activo">Mi cuenta</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup">Salir</div></a>
+          </div>
+        </div>
+      </div>
+
+
+       
+       <!--  Fin menu superior  -->
+    </header>
+
+<nav>
+       <div class="container">
+        <div class="col-xs-12 titulo1 zona_puntos">
+          Bienvenido a tu zona de Puntos Recarga Fácil
+        </div>
+      </div>
+       
+        <!-- menu compañias -->
+       
+        <div class="container">
+        <div class="col-xs-12">
+        <ul class="nav nav-tabs zona_puntos">
+          <li class="active"><a href="#tab-1" class="primera" data-toggle="tab" aria-expanded="true"><div class="menu_zona mis_puntos">Mis Puntos</div></a></li>
+          <li><a href="#tab-2" data-toggle="tab"><div class="menu_zona datos">Datos personales</div></a></li>
+          <li><a href="#tab-3" data-toggle="tab"><div class="menu_zona contrasena">Cambiar contraseña</div></a></li>
+          <li><a href="#tab-4" data-toggle="tab"><div class="menu_zona correo">Cambiar correo</div></a></li>
+          <li><a href="#tab-5" data-toggle="tab"><div class="menu_zona webpay">Webpay One Click</div></a></li>
+        </ul>
+        
+        <!-- contenidos compañias -->
+          
+            <div class="tab-content zona_puntos">
+              <div class="tab-pane fade in active" id="tab-1">
+                  <div class="row">
+                    <div class="col-md-12 tit_zona">Acá podrás conocer el detalle de tus puntos, movimientos, actualizar tus datos y canjear tus puntos.</div>
+                    <div class="col-md-12 sub_tit_zona">Resumen de movimientos:</div>
+                    <div class="col-md-6">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-4">
+                        <div class="col-md-12 puntos_mov saldo">750</div>
+                        <div class="col-md-12 sub_puntos saldo">Saldo de Puntos</div>
+                        <div class="col-md-12 face_puntos"><img src="imagenes/regalo.png" height="40"></div>
+                        <div class="col-md-12 botton saldo"><button type="button" class="btn azul_puntos" href="#canje_puntos" data-toggle="modal" data-target="#canje_puntos" >Canjear ahora</button></div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="col-md-12 puntos_mov">31-12-2015</div>
+                        <div class="col-md-12 sub_puntos">Fecha de Vencimiento Saldo</div>
+                        <div class="col-md-12 face_puntos"><img src="imagenes/calendario_gris.png" height="40"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 separacion_puntos">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-4">
+                        <div class="col-md-12 puntos_mov">22,5</div>
+                        <div class="col-md-12 sub_puntos">Puntos Vencidos</div>
+                        <div class="col-md-12 face_puntos"><img src="imagenes/sad_face.png" height="40"></div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="col-md-12 puntos_mov">500</div>
+                        <div class="col-md-12 sub_puntos">Puntos Canjeados</div>
+                        <div class="col-md-12 face_puntos"><img src="imagenes/smile_face.png" height="40"></div>
+                      </div>
+                      <div class="col-md-2"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 division_zona"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-12 sub_tit_zona">Estado de cuenta:</div>
+                      <div class="col-md-1"></div>
+                      <div class="col-md-2 sin_pad">
+                      <div class="col-md-12 sin_pad calendario">Desde el</div>
+                      <div class="col-md-12 sin_pad"><input class="datepicker calendar" data-date-format="dd/mm/yyyy" name="date" type="text" value="dd-mm-aa"></div>
+                      </div>
+                      <div class="col-md-2 ">
+                        <div class="col-md-12 sin_pad calendario">Hasta el</div>
+                        <div class="col-md-12 sin_pad"><input class="datepicker calendar" data-date-format="dd/mm/yyyy" name="date" type="text" value="dd-mm-aa"></div>
+                      </div>
+                      <div class="col-md-2"><button type="button" class="btn azul_puntos cajear">Filtrar</button></div>
+                      <div class="col-md-5"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-10">
+                        <table class="table mov_puntos">
+                          <thead>
+                            <tr class="tit_tab">
+                              <th>Fecha / Hora</th>
+                              <th>Tipo Movimiento</th>
+                             <th>Monto</th> 
+                              <th>Puntos</th>
+                             <th>Cod. Autorización</th>
+                             <th>Producto</th>
+                             <th>Proveedor</th>
+                             <th>Suscriptor</th>
+                              <th>Medio de Pago</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                           <tr>
+                             <td colspan="9" class="sin_mov">Sin movimientos entre las fechas dd-mm-aa y dd-mm-aa</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-1"></div>
+                    </div>
+              </div>
+              <div class="tab-pane fade" id="tab-2">
+                  <div class="row">
+                    <div class="col-md-12 tit_zona">Actualiza tus datos</div>
+                    <div class="col-md-12 sub_tit_zona">Completa tus datos personales y/o actualiza tu información:</div>
+                    <div class="col-md-12 sub_tit_zona naranjo">¡Tu nombre y apellido han sido actualizados con éxito!</div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2 sin_pad">
+                      <div class="col-md-12 sin_pad calendario">Nombre</div>
+                      <div class="col-md-12 sin_pad"><input type="text" class="cuadro_texto"></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="col-md-12 calendario">Apellido</div>
+                      <div class="col-md-12"><input type="text" class="cuadro_texto"></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="col-md-12 calendario">Correo electrónico</div>
+                      <div class="col-md-12"><input type="text" id="disabledInput" class="cuadro_texto" placeholder="micorreo@email.com" disabled></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="col-md-12 calendario">Celular</div>
+                      <div class="col-md-12"><input type="text" class="cuadro_texto" placeholder="12345678" ></div>
+                    </div>
+                    <div class="col-md-3"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 sin_pad"><button type="button" class="btn azul_puntos cajear">Actualizar</button></div>
+                    <div class="col-md-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-3">
+              <div class="row">
+                    <div class="col-md-12 tit_zona">Actualiza tu contraseña</div>
+                    <div class="col-md-12 sub_tit_zona">Si quieres cambiar tu contraseña ingresa los siguientes datos:</div>
+                    <div class="col-md-12 sub_tit_zona naranjo">¡Tu contraseña ha sido actualizada con éxito!</div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2 sin_pad">
+                      <div class="col-md-12 sin_pad calendario">Correo electrónico</div>
+                      <div class="col-md-12 sin_pad"><input type="text" id="disabledInput" class="cuadro_texto" placeholder="micorreo@email.com" disabled></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="col-md-12 calendario">Contraseña actual</div>
+                      <div class="col-md-12"><input type="password" id="disabledInput" class="cuadro_texto" placeholder="*********" disabled></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="col-md-12 calendario">Nueva contraseña</div>
+                      <div class="col-md-12"><input type="password" class="cuadro_texto" placeholder="***"></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="col-md-12 calendario">Repetir nueva contraseña</div>
+                      <div class="col-md-12"><input type="password" class="cuadro_texto" placeholder="***"></div>
+                    </div>
+                    <div class="col-md-3 seguridad"><img src="imagenes/ticket_verde.png" alt="segura"> Contraseña segura</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 sin_pad"><button type="button" class="btn azul_puntos cajear">Actualizar</button></div>
+                    <div class="col-md-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-4">
+                <div class="row">
+                    <div class="col-md-12 tit_zona">Actualiza tu correo electrónico</div>
+                    <div class="col-md-12 sub_tit_zona">Si quieres cambiar tu correo electrónico ingresa los siguientes datos:</div>
+                    <div class="col-md-12 sub_tit_zona naranjo">Un e-mail de validación ha sido enviado a tu nuevo correo electrónico, sigue el link que aparece en él.</div>
+                    <div class="col-md-1"></div>
+                   <div class="col-md-2 sin_pad">
+                      <div class="col-md-12 sin_pad calendario">Correo electrónico</div>
+                      <div class="col-md-12 sin_pad"><input type="text" id="disabledInput" class="cuadro_texto" placeholder="micorreo@email.com" disabled></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="col-md-12 sin_pad calendario">Nuevo correo electrónico</div>
+                      <div class="col-md-12 sin_pad"><input type="text" class="cuadro_texto"></div>
+                    </div>
+                    <div class="col-md-3"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 sin_pad"><button type="button" class="btn azul_puntos cajear">Actualizar</button></div>
+                    <div class="col-md-1"></div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="tab-5">
+                 <div class="row">
+                    <div class="col-md-12 tit_zona">Webpay One Click</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 sub_tit_zona">¿Deseas vincular una tarjeta de crédito?</div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 sin_pad"><button type="button" class="btn azul_puntos cajear web_pay" href="#inscripcion" data-toggle="modal" data-target="#inscripcion" data-dismiss="modal">Sí, vincular tarjeta de crédito</button></div>
+                    <div class="col-md-1"></div>
+                  </div>
+                  <div class="row final_web_pay">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 sin_pad btn_volver"><a href="#terminos1" data-toggle="modal" data-target="#terminos1" data-dismiss="modal">Conoce más acerca de este medio de pago [ + ]</a></div>
+                    <div class="col-md-1"></div>
+                  </div>
+              </div>
+           </div>
+        </div>
+      </div>
+      
+
+<a class='flotante twitter' href='#' ><img src="imagenes/logo_twitter.png" height="13"></a>
+<a class='flotante facebook' href='#' ><img src="imagenes/logo_face.png" height="20"></a>
+</nav>
+
+    
+    <footer>
+      <div class="container">
+        <div class="col-xs-3"><img src="imagenes/logo_footer.png"></div>
+        <div class="col-xs-6"></div>
+        <div class="col-xs-3"><img src="imagenes/logo_multicaja_footer.png"></div>
+      </div>
+    </footer>
+
+
+<!-- Modal canje puntos 1 -->
+      <div class="modal fade" id="canje_puntos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Canje de Puntos Recarga Fácil</h4>
+            </div>
+            <div class="modal-body">
+              <div class="col-xs-9"></div>
+              <div class="col-xs-3 img_pasos"><img src="imagenes/pasos.png" alt=""></div>
+              <div class="col-xs-12 tit_modal">Tu saldo disponible en puntos es: <span class="text_blue">750</span> (Equivalente a <span class="text_blue">$750</span>)</div>
+              <div class="col-xs-12 sub_modal">Selecciona el producto al cual cargarás tus puntos acumulados:</div>
+              <div class="row modal_puntos">
+              <div class="col-xs-12 productos_canje">
+                <div class="col-xs-12 sub_modal sin_pad">Producto 1</div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12 sin_pad">Producto</div>
+                  <div class="col-xs-12 sin_pad primero_right">
+                    <select class="form-control mod_zona">
+                      <option>Celular</option>
+                      <option>Banda Ancha</option>
+                      <option>Red / Fija</option>
+                      <option>TV Prepago</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12">Proveedor</div>
+                  <div class="col-xs-12">
+                    <select class="form-control mod_zona">
+                      <option>Entel</option>
+                      <option>VTR</option>
+                      <option>Movistar</option>
+                      <option>Claro</option>
+                      <option>Telsur</option>
+                      <option>WOM</option>
+                      <option>DirecTV</option>
+                      <option>Virgin Mobile</option>
+                      <option>Gtel</option>
+                      <option>Móvil Falabella</option>
+                      <option>Colo-Colo Móvil</option>
+                      <option>TIP Wifi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12">Suscriptor</div>
+                  <div class="col-xs-12"><input type="password" id="disabledInput" class="cuadro_texto mod" placeholder="86181238" disabled></div>
+                </div>
+                <div class="col-xs-12 sin_pad">
+                  <button type="button" class="btn azul_puntos" href="#canje_puntos2" data-toggle="modal" data-target="#canje_puntos2" data-dismiss="modal">Seleccionar</button>
+                </div>
+              </div>
+               <div class="col-xs-12 productos_canje">
+                <div class="col-xs-12 sub_modal sin_pad">Producto 2</div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12 sin_pad">Producto</div>
+                  <div class="col-xs-12 sin_pad primero_right">
+                    <select class="form-control mod_zona">
+                      <option>Celular</option>
+                      <option>Banda Ancha</option>
+                      <option>Red / Fija</option>
+                      <option>TV Prepago</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12">Proveedor</div>
+                  <div class="col-xs-12">
+                    <select class="form-control mod_zona">
+                      <option>Entel</option>
+                      <option>VTR</option>
+                      <option>Movistar</option>
+                      <option>Claro</option>
+                      <option>Telsur</option>
+                      <option>WOM</option>
+                      <option>DirecTV</option>
+                      <option>Virgin Mobile</option>
+                      <option>Gtel</option>
+                      <option>Móvil Falabella</option>
+                      <option>Colo-Colo Móvil</option>
+                      <option>TIP Wifi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12">Suscriptor</div>
+                  <div class="col-xs-12"><input type="password" id="disabledInput" class="cuadro_texto mod" placeholder="86181238" disabled></div>
+                </div>
+                <div class="col-xs-12 sin_pad">
+                  <button type="button" class="btn azul_puntos" href="#canje_puntos2" data-toggle="modal" data-target="#canje_puntos2" data-dismiss="modal" >Seleccionar</button>
+                </div>
+              </div>
+
+               <div class="col-xs-12 productos_canje">
+                <div class="col-xs-12 sub_modal sin_pad">Producto 3</div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12 sin_pad">Producto</div>
+                  <div class="col-xs-12 sin_pad primero_right">
+                    <select class="form-control mod_zona">
+                      <option>Celular</option>
+                      <option>Banda Ancha</option>
+                      <option>Red / Fija</option>
+                      <option>TV Prepago</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12">Proveedor</div>
+                  <div class="col-xs-12">
+                    <select class="form-control mod_zona">
+                      <option>Entel</option>
+                      <option>VTR</option>
+                      <option>Movistar</option>
+                      <option>Claro</option>
+                      <option>Telsur</option>
+                      <option>WOM</option>
+                      <option>DirecTV</option>
+                      <option>Virgin Mobile</option>
+                      <option>Gtel</option>
+                      <option>Móvil Falabella</option>
+                      <option>Colo-Colo Móvil</option>
+                      <option>TIP Wifi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-4 sin_pad">
+                  <div class="col-xs-12">Suscriptor</div>
+                  <div class="col-xs-12"><input type="password" id="disabledInput" class="cuadro_texto mod" placeholder="86181238" disabled></div>
+                </div>
+                <div class="col-xs-12 sin_pad">
+                  <button type="button" class="btn azul_puntos" href="#canje_puntos2" data-toggle="modal" data-target="#canje_puntos2" data-dismiss="modal" >Seleccionar</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="modal-footer solo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Modal canje puntos 2 -->
+
+      <div class="modal fade" id="canje_puntos2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Canje de Puntos Recarga Fácil</h4>
+            </div>
+            <div class="modal-body">
+              <div class="act_mail">
+                <div class="row modal_puntos">
+                  <div class="col-xs-9"></div>
+                  <div class="col-xs-3 img_pasos"><img src="imagenes/pasos2.png" alt=""></div>
+                </div>
+                <div class="row modal_puntos">
+                  <div class="col-xs-12 tit_modal">Tu saldo disponible en puntos es: <span class="text_blue">750</span> (Equivalente a <span class="text_blue">$750</span>)</div>    
+                <div class="row modal_puntos">
+                  <div class="col-xs-12 sub_modal sin_pad modal2">Producto 1</div>
+                    <div class="col-xs-4 sin_pad">
+                     <div class="col-xs-12 sin_pad">Producto</div>
+                      <div class="col-xs-12 sin_pad primero_right"><input type="password" id="disabledInput" class="cuadro_texto mod" placeholder="Celular" disabled></div>
+                    </div>
+                    <div class="col-xs-4 sin_pad">
+                     <div class="col-xs-12">Proveedor</div>
+                      <div class="col-xs-12"><input type="password" id="disabledInput" class="cuadro_texto mod" placeholder="Claro" disabled></div>
+                    </div>
+                    <div class="col-xs-4 sin_pad">
+                     <div class="col-xs-12">Suscriptor</div>
+                      <div class="col-xs-12"><input type="password" id="disabledInput" class="cuadro_texto mod" placeholder="86181238" disabled></div>
+                    </div>
+                </div>
+                <div class="row modal_puntos">
+                    <div class="col-xs-4 sin_pad modal2">
+                     <div class="col-xs-12 sin_pad">Indica el total de Puntos a canjear</div>
+                      <div class="col-xs-12 sin_pad primero_right"><input class="cuadro_texto mod"></div>
+                      <div class="col-xs-12 sin_pad tx_gray">Entre $750 y $25.000</div>
+                      <div class="col-xs-12 sin_pad">
+                        <button type="button" class="btn azul_puntos btn_grande" href="#canje_puntos3" data-toggle="modal" data-target="#canje_puntos3" data-dismiss="modal">Canjear</button>
+                      </div>
+                      <div class="col-xs-12 sin_pad btn_volver"><a href="#canje_puntos" data-toggle="modal" data-target="#canje_puntos" data-dismiss="modal" >&#60; Volver</a></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+            <div class="modal-footer solo">
+            </div>
+      </div>
+      </div>
+      </div>
+<!--  Modal canje puntos 3 -->
+
+      <div class="modal fade" id="canje_puntos3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Canje de Puntos Recarga Fácil</h4>
+            </div>
+            <div class="modal-body">
+              <div class="act_mail">
+              </div>
+              <div class="row">
+                  <div class="col-xs-1"></div>
+                  <div class="col-sm-10 contenido_mod exito">¡Has canjeado exitosamente <span class="editables">%%puntoscanjeables%%</span> Puntos Recarga Fácil en tu Producto <span class="editables">%%numerocelular%%</span> de la Compañía <span class="editables">%%compañia%%.</span></div>
+                  <div class="col-xs-1"></div>
+              </div>
+            </div>
+            <div class="modal-footer con_btn">
+              <button type="button" class="btn btn-desinscripcion gris grande" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--  Modal terminos1 -->
+
+
+      <div class="modal fade" id="terminos1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Conoce más acerca de Webpay One Click</h4>
+            </div>
+            <div class="modal-body">
+              <div class="act_mail">
+              </div>
+              <div class="row conoce_mas">
+                  <div class="col-xs-1"></div>
+                  <div class="col-sm-10 contenido_mod terminos"><p class="sub_modal conoce">Conoce más acerca de Webpay One Click</p><p>Los usuarios de Recargafacil.cl podrán acceder a esta modalidad de pago llamada Webpay Oneclick, la cual consiste en realizar tus compras en https://www.recargafacil.cl solo con 1(un) click.</p><p>Para acceder esta forma de pago, debes empezar por elegir la opción Webpay Oneclick y completar el formulario con los datos de tu tarjeta de crédito por única vez. Los datos son ingresados sobre Webpay Plus(*) y se redireccionará a tu banco para ingresar las claves de seguridad correspondientes, por el monto de $1, el cual es solo referencial ya que no se verá reflejado en tu estado de cuenta(**). Desde ese momento, al elegir la opción Webpay Oneclick podrás realizar tus compras solo con presionar “Comprar”, solo con 1(un) click(***).</p><p>Solo podrás tener activa 1(una) tarjeta por cada cuenta de Recargafacil.cl que tengas. Si deseas terminar con este servicio solo debes desactivar tu tarjeta, en los datos de tu perfil o al realizar la próxima compra(****).</p><p>(*) Webpay Plus, plataforma segura que cuenta con el respaldo de Transbank S.A.</p><p>(**) Solo la primera vez “te inscribes y compras” en la misma transacción.</p><p>(***) Aplica solo para ventas con tarjetas de crédito de emisores nacionales. No admite cuotas.</p><p>(****) Cada usuario es resposable de la seguridad de su contraseña.</p></div>
+                  <div class="col-xs-1"></div>
+              </div>
+            </div>
+            <div class="modal-footer solo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Modal inscripcion -->
+
+      <div class="modal fade" id="inscripcion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Proceso de inscripción a One Click</h4>
+            </div>
+            <div class="modal-body">
+              <div class="act_mail">
+                <div class="row modal_puntos">
+                  <div class="col-xs-9"></div>
+                  <div class="col-xs-3 img_pasos"><img src="imagenes/pasos.png" alt=""></div>
+                </div>
+                <div class="row modal_puntos">
+                  <div class="col-xs-12 tit_modal">A continuación verifica los datos asociados a One Click:</div>    
+                <div class="row modal_puntos">
+                  <div class="col-xs-12 sub_modal sin_pad modal2">Tarjeta 1</div>
+                    <div class="col-xs-4 sin_pad">
+                     <div class="col-xs-12 sin_pad">Operador</div>
+                      <div class="col-xs-12 sin_pad primero_right">
+                        <select class="form-control mod_zona">
+                            <option>Entel</option>
+                            <option>VTR</option>
+                            <option>Movistar</option>
+                            <option>Claro</option>
+                            <option>Telsur</option>
+                            <option>WOM</option>
+                            <option>DirecTV</option>
+                            <option>Virgin Mobile</option>
+                            <option>Gtel</option>
+                            <option>Móvil Falabella</option>
+                            <option>Colo-Colo Móvil</option>
+                            <option>TIP Wifi</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-4 sin_pad">
+                     <div class="col-xs-12">Producto</div>
+                      <div class="col-xs-12">
+                        <select class="form-control mod_zona">
+                            <option>Celular</option>
+                            <option>Banda Ancha</option>
+                            <option>Red fija</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-4 sin_pad">
+                     <div class="col-xs-12">Suscriptor</div>
+                     <div class="col-xs-12"><input type="text" id="disabledInput" class="cuadro_texto mod celular-dig" placeholder="9" disabled><input type="text" class="cuadro_texto mod celular"></div>
+                     <div class="col-xs-12 tx_gray">Ingresa tu número</div>
+                    </div>
+                </div>
+                <div class="row modal_puntos">
+                    <div class="col-xs-4 sin_pad">
+                     <div class="col-xs-12 sin_pad">Correo electrónico</div>
+                      <div class="col-xs-12 sin_pad primero_right"><input type="text" id="disabledInput" class="cuadro_texto mod" placeholder="micorreo@email.com" disabled></div>
+                      <div class="col-xs-12 sin_pad">
+                        <button type="button" class="btn azul_puntos btn_grande inscripcion" href="#inscripcion2" data-toggle="modal" data-target="#inscripcion2" data-dismiss="modal">Continuar</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+            <div class="modal-footer solo">
+            </div>
+      </div>
+      </div>
+      </div>
+
+<!--  Modal inscripcion2 -->
+
+      <div class="modal fade" id="inscripcion2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Proceso de inscripción a One Click</h4>
+            </div>
+            <div class="modal-body">
+              <div class="act_mail">
+              </div>
+              <div class="row">
+                  <div class="col-xs-1"></div>
+                  <div class="col-sm-10 contenido_mod exito superior">¡Felicitaciones tu tarjeta ha quedado suscrita al sistema de pago One Click!</div>
+                  <div class="col-xs-1"></div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-1"></div>
+                  <div class="col-sm-10 contenido_mod exito light">Para realizar tu recarga haz click <a class="celeste" href="/recarga_facil">aquí</a></div>
+                  <div class="col-xs-1"></div>
+              </div>
+            </div>
+            <div class="modal-footer con_btn">
+              <button type="button" class="btn btn-desinscripcion gris grande" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- JS -->
+
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script>
+      $(function(){
+        $('.datepicker').datepicker({
+          language: 'es'
+        });
+      })
+    </script>
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+      $('#canje_puntos').on('shown.bs.modal', function () {
+      $('#myInput').focus();
+      $('.modal:visible').length && $(document.body).addClass('modal-open');
+      })
+    </script>
+    <script>
+      $('#canje_puntos2').on('shown.bs.modal', function () {
+      $('#myInput').focus();
+      $('.modal:visible').length && $(document.body).addClass('modal-open');
+      })
+    </script>
+    <script>
+      $('#canje_puntos3').on('shown.bs.modal', function () {
+      $('#myInput').focus();
+      $('.modal:visible').length && $(document.body).addClass('modal-open');
+      })
+    </script>
+    <script>
+      $('#terminos1').on('shown.bs.modal', function () {
+      $('#myInput').focus();
+      $('.modal:visible').length && $(document.body).addClass('modal-open');
+      })
+    </script>
+    <script>
+      $('#inscripcion').on('shown.bs.modal', function () {
+      $('#myInput').focus();
+      $('.modal:visible').length && $(document.body).addClass('modal-open');
+      })
+    </script>
+    <script>
+      $('#inscripcion2').on('shown.bs.modal', function () {
+      $('#myInput').focus();
+      $('.modal:visible').length && $(document.body).addClass('modal-open');
+      })
+    </script>
+
+  </body>
+
+
+
+</html>

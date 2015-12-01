@@ -32,11 +32,13 @@
             <a href="#"><div class="col-xs-2 menu_sup">Quiénes Somos</div></a>
             <a href="#"><div class="col-xs-2 menu_sup">Ayuda</div></a>
             <a href="#"><div class="col-xs-2 menu_sup">Contacto</div></a>
-            <a href="#"><div class="col-xs-2 menu_sup"><img src="imagenes/icono_activate.png" width="15"> Actívate</div></a>
-            <a href="#"><div class="col-xs-2 menu_sup"><img src="imagenes/icono_ingresa.png" width="15"> Ingresa</div></a>
+            <a href="#myModal" data-toggle="modal" data-target="#myModal" ><div class="col-xs-2 menu_sup"><img src="imagenes/icono_activate.png" width="15"> Actívate</div></a>
+            <a href="#mymodal2" data-toggle="modal" data-target="#myModal2" ><div class="col-xs-2 menu_sup"><img src="imagenes/icono_ingresa.png" width="15"> Ingresa</div></a>
           </div>
         </div>
       </div>
+
+
        
        <!--  Fin menu superior  -->
 
@@ -620,7 +622,7 @@
 <!-- boton compañias -->
 
 <div class="container compa">
-  <a href="#"><div class="col-xs-3 btn_serv"><img src="imagenes/icono_celular.png" height="30">Telefonía Móvil</div></a>
+  <a href="#"><div class="col-xs-3 btn_serv hover"><img src="imagenes/icono_celular.png" height="30">Telefonía Móvil</div></a>
   <a href="#"><div class="col-xs-3 btn_serv"><img src="imagenes/icono_tv.png" height="30">Televisión</div></a>
   <a href="#"><div class="col-xs-3 btn_serv"><img src="imagenes/icono_telefono.png" height="30">Telefonía Fija</div></a>
   <a href="#"><div class="col-xs-3 btn_serv"><img src="imagenes/icono_banda_acha.png" height="30">Banda Ancha</div></a>
@@ -671,6 +673,103 @@
         <div class="col-xs-3"><img src="imagenes/logo_multicaja_footer.png"></div>
       </div>
     </footer>
+
+
+<!-- Modal Actívate -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Actívate</h4>
+            </div>
+            <div class="modal-body">
+              <div class="act_mail">
+                <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-xs-8 sub_tit_mod"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" value=" Actívate con tu email" class="im_activa" ></div>
+                  <div class="col-xs-2"></div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-sm-8 contenido_mod">Al activar tu cuenta acumularás Puntos Recarga Facíl, que podrás canjear por recargas GRATIS. ¡Mientras más recarges, más puntos tendrás!</div>
+                  <div class="col-xs-2"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Activar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Modal Ingresa -->
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Ingresa</h4>
+            </div>
+            <div class="modal-body">
+              <div class="act_mail">
+                <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-xs-8 sub_tit_mod"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" value=" Ingresa con tu mail" class="im_activa" ></div>
+                  <div class="col-xs-2"></div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-xs-8 sub_tit_mod pass"><img src="imagenes/icono_candado.png" height="15"><input type="text" name="activate" value=" Coloca tu contraseña" class="im_activa" ></div>
+                  <div class="col-xs-2"></div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6"></div>
+                  <div class="col-xs-4 lost_pass">
+                    <div class="col-xs-12 lost_pass"><a href="#myModal3" data-toggle="modal" data-target="#myModal3" data-dismiss="modal" ><b>¿Olvidaste tu contraseña?</b></a></div>
+                    <div class="col-xs-12 lost_pass"><label class="recuerdame"><input type="checkbox" value=""> Recuérdame</label></div>
+                  </div>
+                  <div class="col-xs-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Ingresar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Modal Recupera -->
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Recuperar contraseña</h4>
+            </div>
+            <div class="modal-body">
+              <div class="act_mail">
+                <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-xs-8 sub_tit_mod"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" value=" Ingresa tu email" class="im_activa" ></div>
+                  <div class="col-xs-2"></div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-sm-8 contenido_mod">Una nueva contraseña será enviada a tu correo electrónico, con ella podrás iniciar sesión y si lo deseas la puedes cambiar en la pestaña “Cambiar contraseña”.</div>
+                  <div class="col-xs-2"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Recuperar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     <!-- JS -->
     <script src="js/bootstrap-select.js"></script>
@@ -741,7 +840,22 @@
       $(function(){
       $("#includedContent12").load("canjea.html"); 
       });
-    </script> 
+    </script>
+    <script>
+      $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+      })
+    </script>
+    <script>
+      $('#myModal2').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+      })
+    </script>
+    <script>
+      $('#myModal3').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+      })
+    </script>
 
   </body>
 </html>

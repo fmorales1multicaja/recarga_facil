@@ -4,6 +4,12 @@ body {
 	min-width: 1240px;
 }
 
+footer {
+	margin-top: 50px;
+	border-top: 1px solid #cccccc;
+	padding-top: 30px;
+}
+
 .container {
 	 max-width: none !important;
 	 width: 1240px;	
@@ -19,7 +25,6 @@ body {
 
 header {
 	background-image: url("../imagenes/fondo_header1.png");
-	height: 500px;
 }
 .img_central {
 	margin-top: 10px;
@@ -38,6 +43,11 @@ header {
 	padding: 8px 0px;
 	vertical-align:text-bottom;
 }
+
+.menu_sup.activo {
+	background-color: #508cb6;
+}
+
 a:hover .menu_sup {
 	background-color: #508cb6;
 }
@@ -100,9 +110,16 @@ a .btn_serv {
 	font-size: 25px;
 	margin-bottom: 10px;
 	border-bottom: 5px solid white;
+	border-left: 1px solid lightgray;
 }
 
 a:hover .btn_serv {
+	background: #666;
+	border-bottom: 5px solid #09B0E5;
+}
+
+
+.btn_serv.hover {
 	background: #666;
 	border-bottom: 5px solid #09B0E5;
 }
@@ -143,12 +160,15 @@ a:hover .btn_serv {
 	border-top: 0px;
 	border-bottom: 3px solid white;
 	margin-right: 0px;
-	border-right: 1px solid #ddd;
 }
 .tab-content {
 	background: white;
 	border: 1px solid #ddd;
 	border-top: 0px;
+}
+
+.tab-content.zona_puntos {
+	min-height: 640px;	
 }
 
 .nav .nav-tabs .active {
@@ -483,4 +503,553 @@ a:hover .btn_serv {
 
 a.flotante:hover{
 	z-index:1001;
+}
+
+.modal-title {
+	font-size: 36px;
+	color: #09B0E5;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 0px;
+}
+
+.modal-header .close {
+	padding-top: 10px;
+}
+
+.close {
+	font-size: 40px;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+.modal-footer .btn.btn-primary {
+	background-color: #09B0E5;
+	font-size: 26px;
+	padding: 0px 60px;
+	font-weight: bold;
+	border: 0px;
+}
+
+.contenido_mod {
+	color: gray;
+	font-size: 18px;
+	text-align: center;
+	padding: 0px 0px;
+}
+
+.sub_tit_mod {
+	font-size: 18px;
+	color: gray;
+	border: 1px solid lightgray;
+	padding: 2px 10px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	text-align: center;
+
+}
+
+.sub_tit_mod.pass {
+	margin-top: 0px;
+}
+
+.sub_tit_mod img {
+	padding-right: 7px;
+	padding-bottom: 2px;
+}
+
+.modal-footer {
+	border-top: 0px;
+	height: 140px;
+	background-image: url(../imagenes/fondo_fut_mod.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.modal-content {
+	border-radius: 0px;
+	width: 590px;
+}
+
+.modal-header {
+	padding: 5px 0px;
+	margin: 0px 40px;
+}
+.im_activa {
+	border: 0px;
+	width: 300px;
+	height: 30px;
+}
+.lost_pass {
+	text-align: right;
+	padding: 0px;
+	font-size: 18px;
+	color: gray;
+}
+
+.lost_pass a {
+	color: #09B0E5;
+}
+
+.recuerdame {
+	font-weight: normal;
+}
+
+
+/**--zona de puntos--**/
+
+header.zonapuntos {
+	background-image: none;
+}
+
+.titulo1.zona_puntos {
+	margin-bottom: 40px;
+}
+
+.nav.nav-tabs.zona_puntos li {
+	width: 20%;
+	background-color: white;
+}
+
+.nav.nav-tabs.zona_puntos li a {
+	width: 100%;
+	padding-bottom: 0px;
+	text-align: center;
+	border-right: 1px solid #ddd;
+}
+
+.nav.nav-tabs.zona_puntos li a:hover {
+	background-color: white;
+}
+
+li.active .menu_zona {
+	border-bottom: 4px solid #09B0E5;
+	width: 80%;
+	margin: auto;
+	color: black;
+}
+
+li .menu_zona {
+	border-bottom: 4px solid white;
+	width: 80%;
+	margin: auto;
+	padding-left: 10px;
+	font-size: 20px;
+	color: #999;
+}
+
+li.active .menu_zona.mis_puntos {
+	background-image: url(../imagenes/estrella_azul.png);
+	background-repeat: no-repeat;
+	background-position: 20% center;
+}
+
+.menu_zona.mis_puntos {
+	background-image: url(../imagenes/estrella_gris.png);
+	background-repeat: no-repeat;
+	background-position: 20% center;
+}
+
+li.active .menu_zona.datos {
+	background-image: url(../imagenes/lapiz_azul.png);
+	background-repeat: no-repeat;
+	background-position: 8% center;
+}
+
+.menu_zona.datos {
+	background-image: url(../imagenes/lapiz_gris.png);
+	background-repeat: no-repeat;
+	background-position: 8% center;
+}
+
+li.active .menu_zona.contrasena {
+	background-image: url(../imagenes/candado_azul.png);
+	background-repeat: no-repeat;
+	background-position: 4% center;
+}
+
+.menu_zona.contrasena {
+	background-image: url(../imagenes/candado_gris.png);
+	background-repeat: no-repeat;
+	background-position: 4% center;
+}
+
+
+li.active .menu_zona.correo {
+	background-image: url(../imagenes/persona_azul.png);
+	background-repeat: no-repeat;
+	background-position: 12% center;
+}
+
+.menu_zona.correo {
+	background-image: url(../imagenes/persona_gris.png);
+	background-repeat: no-repeat;
+	background-position: 12% center;
+}
+
+li.active .menu_zona.webpay {
+	background-image: url(../imagenes/tarjeta_azul.png);
+	background-repeat: no-repeat;
+	background-position: 6% center;
+}
+
+.menu_zona.webpay {
+	background-image: url(../imagenes/tarjeta_gris.png);
+	background-repeat: no-repeat;
+	background-position: 6% center;
+	background-size: 20px 17px;
+}
+
+.tit_zona {
+	font-size: 22px;
+	color: black;
+	font-weight: bold;
+	padding: 30px 0px 30px 100px;
+}
+
+.sub_tit_zona {
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	padding: 0px 0px 10px 100px;
+}
+.puntos_mov {
+	font-size: 55px;
+	color: #999;
+	text-align: center;
+	line-height: 1;
+}
+.sub_puntos {
+	text-align: center;
+	color: black;
+	font-size: 16px;
+}
+
+.face_puntos {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.separacion_puntos {
+	border-left: 2px dotted #ccc;
+}
+
+.puntos_mov.saldo {
+	color: #09B0E5;
+}
+
+.sub_puntos.saldo {
+	color: #09B0E5;
+}
+.botton.saldo {
+	text-align: center;
+}
+.btn.azul_puntos {
+	background-color: #09B0E5;
+	color: white;
+	margin: 0px auto;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0px 10px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.division_zona {
+	border-top: 2px dotted #ccc;
+	padding-bottom: 30px;
+}
+
+.sin_pad{
+	padding: 0px;
+}
+
+.datepicker {
+	background-position: 0%;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid lightgray;
+}
+
+.datepicker.calendar{
+	width: 150px;
+	padding-left: 30px;
+	background-image: url(../imagenes/calendaio_azul.png);
+	background-repeat: no-repeat;
+}
+
+.calendario {
+	font-size: 16px;	
+}
+
+.btn.azul_puntos.cajear {
+	margin-top: 22px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.sin_mov {
+	text-align: center;
+}
+tr.tit_tab th {
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	border-left: 1px solid lightgray;
+}
+
+.table.mov_puntos {
+	border: 1px solid lightgray;
+	margin-bottom: 80px;
+}
+
+.naranjo{
+	color: #d36a2e;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.cuadro_texto {
+	width: 170px;
+	border: 1px solid lightgray;
+	padding-left: 10px;
+}
+.seguridad {
+	padding-top: 20px;
+	font-size: 16px;
+	color: gray;
+}
+.texto_azul{
+	color: #09B0E5;
+	padding-bottom: 60px;
+}
+
+.table thead tr.tit_tab th {
+ border-bottom: none;
+}
+
+.modal-body .tit_modal{
+	font-size: black;
+	font-weight: bold;
+	font-size: 22px;
+	padding-top: 15px;
+}
+.modal-body .sub_modal{
+	font-size: black;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.img_pasos {
+	text-align: right;
+}
+.text_blue {
+	color: #09B0E5;
+}
+
+.productos_canje{
+	margin: 20px 0px;
+	border: 1px solid #ccc;
+}
+
+.row.modal_puntos {
+	max-width: 590px;
+	padding: 0px 30px;
+}
+
+.cuadro_texto.mod {
+	width: 100%;
+	height: 25px;
+}
+
+.sin_pad.primero_right {
+	padding-right: 15px;
+}
+
+.form-control.mod_zona {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	height: 25px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.modal-footer.solo {
+	height: 80px;
+}
+
+.modal2 {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.tx_gray{
+	color: #666;
+}
+
+.azul_puntos.btn_grande {
+	padding: 0px 50px;
+	margin-bottom: 10px;
+}
+
+.btn_volver a {
+	font-size: 14px;
+	color: #09B0E5;
+}
+
+.contenido_mod.exito {
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	padding-top: 45px;
+}
+
+.exito .editables{
+	color: #09B0E5;
+}
+
+.modal-footer.con_btn {
+	height: 160px;
+}
+
+.contenido_mod.terminos{
+	font-weight: normal;
+	font-size: 16px;
+	text-align: left;
+	color: black;
+}
+
+.conoce_mas {
+	padding-top: 30px;
+}
+
+.sub_modal.conoce {
+	padding-bottom: 10px;
+}
+
+.cuadro_texto.mod.celular-dig {
+	width: 30px;
+	margin-right: 10px;
+}
+
+.cuadro_texto.mod.celular {
+	width: 90px;
+}
+
+.btn_grande.inscripcion {
+	margin-top: 20px;
+}
+
+.exito.light {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.exito.superior {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+a.celeste {
+	color: #09B0E5;
+	font-size: 18px;
+}
+
+.table.web_pay {
+	border: 1px solid #d3d3d3;
+	margin-bottom: 10px;
+}
+
+.tarjeta_pay {
+	border: 1px solid #d3d3d3;
+	margin-bottom: 35px;
+}
+
+.btn.azul_puntos.desvincular {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0px auto 10px auto;
+}
+
+.tit_tarjeta_pay {
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	padding: 10px 0px;
+}
+
+button.btn-desinscripcion {
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0px 15px;
+	background-color: #09B0E5;
+}
+
+button.btn.btn-desinscripcion.gris {
+	background-color: #999999;
+}
+
+button.btn-desinscripcion:hover {
+	color: white;
+}
+
+.contenido_mod.exito.desinscripcion {
+	padding: 40px 0px;
+}
+
+.final_web_pay {
+	padding-bottom: 30px;
+}
+
+.btn.azul_puntos.cajear.web_pay {
+	margin-bottom: 10px;
+}
+
+tr.tit_tab.titulo th {
+	background-color: #f6f6f6;
+}
+
+tr.tit_tab.contenido th {
+	font-size: 14px;
+}
+
+.container .informacion {
+	border: 1px solid #cccccc;
+}
+
+.titulo_quienes {
+	font-size: 48px;
+	font-weight: bold;
+	color: #09B0E5;
+	padding-bottom: 10px;
+}
+
+.quienes_somos p {
+	font-size: 16px;
+}
+
+.mapa_sitio {
+	font-size: 16px;
+	padding-top: 40px;
+}
+
+.servicios_quienes_somos img {
+	padding: 40px 0px 80px 10px;
+}
+
+.titulo1.quienes {
+	padding-bottom: 30px;
+	padding-left: 0px;
+}
+
+.gris.grande {
+	padding: 0px 60px;
+}
+
+footer.sin_linea {
+	border-top: none;
 }
