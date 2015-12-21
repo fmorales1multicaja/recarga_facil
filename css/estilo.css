@@ -25,6 +25,7 @@ footer {
 
 header {
 	background-image: url("../imagenes/fondo_header1.png");
+	height: 500px;
 }
 .img_central {
 	margin-top: 10px;
@@ -534,7 +535,7 @@ a.flotante:hover{
 }
 
 .contenido_mod {
-	color: gray;
+	color: black;
 	font-size: 18px;
 	text-align: center;
 	padding: 0px 0px;
@@ -545,14 +546,29 @@ a.flotante:hover{
 	color: gray;
 	border: 1px solid lightgray;
 	padding: 2px 10px;
-	margin-top: 30px;
-	margin-bottom: 15px;
+	margin-top: 15px;
 	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
 
+.modal-body.ingresa {
+	padding-bottom: 0px;
+}
+
+.sub_tit_mod.ingresa {
+	margin-top: 30px;
+}
+
+.modal-body.activate {
+	padding-bottom: 0px;
+	padding-top: 30px;
 }
 
 .sub_tit_mod.pass {
-	margin-top: 0px;
+	margin-top: 20px;
+
 }
 
 .sub_tit_mod img {
@@ -595,6 +611,7 @@ a.flotante:hover{
 
 .recuerdame {
 	font-weight: normal;
+	color: black;
 }
 
 
@@ -1052,4 +1069,19 @@ tr.tit_tab.contenido th {
 
 footer.sin_linea {
 	border-top: none;
+}
+
+.menu_sup.activo {
+	background-color: #508CB6;
+}
+
+.recarga_companias {
+	background-color: #f6f6f6;
+}
+
+.close {
+	opacity: 0.6;
+}
+.zonapuntos.solo {
+	height: 0px;
 }

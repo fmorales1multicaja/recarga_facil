@@ -28,8 +28,8 @@
         <div class="col-xs-3"></div>
         <div class="col-xs-6">
           <div class="row">
-            <a href="#"><div class="col-xs-2 menu_sup">Inicio</div></a>
-            <a href="#"><div class="col-xs-2 menu_sup">Quiénes Somos</div></a>
+            <a href="#"><div class="col-xs-2 menu_sup activo">Inicio</div></a>
+            <a href="quienes_somos.html"><div class="col-xs-2 menu_sup">Quiénes Somos</div></a>
             <a href="#"><div class="col-xs-2 menu_sup">Ayuda</div></a>
             <a href="#"><div class="col-xs-2 menu_sup">Contacto</div></a>
             <a href="#myModal" data-toggle="modal" data-target="#myModal" ><div class="col-xs-2 menu_sup"><img src="imagenes/icono_activate.png" width="15"> Actívate</div></a>
@@ -52,7 +52,7 @@
        
         <div class="container">
         <div class="col-xs-12">
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs recarga_companias">
           <li class="active"><a href="#tab-1" class="primera" data-toggle="tab" aria-expanded="true"><div class="movistar"></div></a></li>
           <li><a href="#tab-2" data-toggle="tab"><div class="entel"></div></a></li>
           <li><a href="#tab-3" data-toggle="tab"><div class="claro"></div></a></li>
@@ -683,18 +683,18 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
               <h4 class="modal-title" id="myModalLabel">Actívate</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body activate">
               <div class="act_mail">
                 <div class="row">
                   <div class="col-xs-2"></div>
-                  <div class="col-xs-8 sub_tit_mod"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" value=" Actívate con tu email" class="im_activa" ></div>
+                  <div class="col-sm-8 contenido_mod"><b>Al activar tu cuenta acumularás Puntos Recarga Facíl, que podrás canjear por recargas GRATIS. ¡Mientras más recarges, más puntos tendrás!</b></div>
                   <div class="col-xs-2"></div>
                 </div>
-              </div>
-              <div class="row">
+                <div class="row">
                   <div class="col-xs-2"></div>
-                  <div class="col-sm-8 contenido_mod">Al activar tu cuenta acumularás Puntos Recarga Facíl, que podrás canjear por recargas GRATIS. ¡Mientras más recarges, más puntos tendrás!</div>
+                  <div class="col-xs-8 sub_tit_mod"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" placeholder=" Actívate con tu correo electrónico" class="im_activa" ></div>
                   <div class="col-xs-2"></div>
+                </div>
               </div>
             </div>
             <div class="modal-footer">
@@ -705,6 +705,7 @@
       </div>
 
 <!-- Modal Ingresa -->
+
       <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -712,22 +713,22 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
               <h4 class="modal-title" id="myModalLabel">Ingresa</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body ingresa">
               <div class="act_mail">
                 <div class="row">
                   <div class="col-xs-2"></div>
-                  <div class="col-xs-8 sub_tit_mod"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" value=" Ingresa con tu mail" class="im_activa" ></div>
+                  <div class="col-xs-8 sub_tit_mod ingresa"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" placeholder=" Ingresa con tu correo electrónico" class="im_activa" ></div>
                   <div class="col-xs-2"></div>
                 </div>
                 <div class="row">
                   <div class="col-xs-2"></div>
-                  <div class="col-xs-8 sub_tit_mod pass"><img src="imagenes/icono_candado.png" height="15"><input type="text" name="activate" value=" Coloca tu contraseña" class="im_activa" ></div>
+                  <div class="col-xs-8 sub_tit_mod pass"><img src="imagenes/icono_candado.png" height="15"><input type="text" name="activate" placeholder=" Coloca tu contraseña" class="im_activa" ></div>
                   <div class="col-xs-2"></div>
                 </div>
                 <div class="row">
                   <div class="col-xs-6"></div>
                   <div class="col-xs-4 lost_pass">
-                    <div class="col-xs-12 lost_pass"><a href="#myModal3" data-toggle="modal" data-target="#myModal3" data-dismiss="modal" ><b>¿Olvidaste tu contraseña?</b></a></div>
+                    <div class="col-xs-12 lost_pass"><a href="#myModal3"><b>¿Olvidaste tu contraseña?</b></a></div>
                     <div class="col-xs-12 lost_pass"><label class="recuerdame"><input type="checkbox" value=""> Recuérdame</label></div>
                   </div>
                   <div class="col-xs-2"></div>
@@ -741,7 +742,8 @@
         </div>
       </div>
 
-<!-- Modal Recupera -->
+<!-- Modal Recupera (este modal se activa al presinar ¿Olvidaste tu contrtaseña? del modal "Modal Ingresa" ) -->
+
       <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -749,18 +751,18 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
               <h4 class="modal-title" id="myModalLabel">Recuperar contraseña</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body activate">
               <div class="act_mail">
-                <div class="row">
-                  <div class="col-xs-2"></div>
-                  <div class="col-xs-8 sub_tit_mod"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" value=" Ingresa tu email" class="im_activa" ></div>
-                  <div class="col-xs-2"></div>
-                </div>
-              </div>
               <div class="row">
                   <div class="col-xs-2"></div>
-                  <div class="col-sm-8 contenido_mod">Una nueva contraseña será enviada a tu correo electrónico, con ella podrás iniciar sesión y si lo deseas la puedes cambiar en la pestaña “Cambiar contraseña”.</div>
+                  <div class="col-sm-8 contenido_mod"><b>Una nueva contraseña será enviada a tu correo electrónico, con ella podrás iniciar sesión y si lo deseas la puedes cambiar en la pestaña “Cambiar contraseña”.</b></div>
                   <div class="col-xs-2"></div>
+              </div>
+                <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-xs-8 sub_tit_mod"><img src="imagenes/icono_mail.png" height="15"><input type="text" name="activate" placeholder=" Ingresa tu correo electrónico" class="im_activa" ></div>
+                  <div class="col-xs-2"></div>
+                </div>
               </div>
             </div>
             <div class="modal-footer">
