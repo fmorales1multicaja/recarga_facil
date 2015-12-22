@@ -95,7 +95,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -137,7 +137,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -190,7 +190,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -231,7 +231,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -285,7 +285,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -327,7 +327,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -368,7 +368,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -410,7 +410,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -451,7 +451,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -493,7 +493,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -550,7 +550,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -592,7 +592,7 @@
                             <div class="col-xs-4">
                                 <input type="email" class="form-control mail" placeholder="">
                             </div>
-                            <button type="submit" class="btn btn-recarga">Recargar</button>
+                            <button type="submit" class="btn btn-recarga" data-toggle="modal" data-target="#recargar">Recargar</button>
                         
                       </div>
                       <div class="row instruccion_baja">
@@ -772,6 +772,77 @@
         </div>
       </div>
 
+<!-- Modal Recargar -->
+
+      <div class="modal fade" id="recargar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="imagenes/btn_cerrar.png"></button>
+              <h4 class="modal-title" id="myModalLabel">Elige tu medio de pago</h4>
+            </div>
+            <div class="modal-body activate">
+              <div class="act_mail">
+              <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-sm-8 contenido_mod">
+                    <p class="tit_pagos"><img src="imagenes/num_1.png">Detalle de tu carga</p>
+                    <p class="texto_pagos">Monto a recargar: %%Monto_recarga%%<br>
+                    N° a recargar: %%numero_cliente%%<br>
+                    Compañía: %%compañia_cliente%%<br>
+                    Correo electrónico cliente: %%correo_cliente%%</p>
+                  </div>
+                  <div class="col-xs-2"></div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12 contenido_mod">
+                    <form>
+                      <p class="tit_pagos"><img src="imagenes/num_2.png">Selecciona tu medio de pago</p>
+                        <div class="cc-selector medios_pago">
+                          <input checked="checked" id="web_pay" type="radio" name="credit-card" value="web_pay" />
+                          <label class="drinkcard-cc web_pay" for="web_pay"></label>
+                          <input id="paga_facil" type="radio" name="credit-card" value="paga_facil" />
+                          <label class="drinkcard-cc paga_facil"for="paga_facil"></label>
+                          <input checked="checked" id="multicaja" type="radio" name="credit-card" value="multicaja" />
+                          <label class="drinkcard-cc multicaja" for="multicaja"></label>
+                          <input id="one_click" type="radio" name="credit-card" value="one_click" />
+                          <label class="drinkcard-cc one_click"for="one_click"></label>
+                          <input checked="checked" id="cencusud" type="radio" name="credit-card" value="cencusud" />
+                          <label class="drinkcard-cc cencusud" for="cencusud"></label>
+                          <input id="paypal" type="radio" name="credit-card" value="paypal" />
+                          <label class="drinkcard-cc paypal"for="paypal"></label>
+                        </div> 
+                    </form>
+                  </div>
+              </div>
+                <div class="row">
+                  <div class="panel-group terminos" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title tx_center terminos">
+                           <input type="checkbox"> He leído y estoy de acuerdo con los <a class="texto_celeste" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" <aria-> </aria-expanded="true" aria-controls="collapseOne">términos y condiciones.</a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body terminos">
+                            <div class="caja_contenido">
+                                <p><b>Términos y Condiciones Recargafacil.cl</b></p><p>Los puntos obtenidos por la siguiente transacción serán abonados a la cuenta de correo electrónico del usuario que realiza la recarga. En caso que no se ingrese un correo electrónico, los puntos no serán abonados a ninguna cuenta o cliente.</p><p>Las recarga exitosas no tienen derecho a reembolso.</p><p>Si su recarga fue cargada a su tarjeta de crédito, débito o de casa comercial y su saldo no fue abonado, por favor contáctese con soporte@redfacil.com, indicando la fecha de la recarga, número del celular, orden de compra y medio de pago utilizado para el pago de tu recarga. Su solicitud será evaluada, y en caso que corresponda, se le gatillará otra recarga sin cargo al cliente.</p><p><b>Términos y Condiciones Webpay OneClick en Recargafacil.cl</b></p><p>Los usuarios de Recargafacil.cl podrán acceder a esta modalidad de pago llamada Webpay Oneclick, la cual consiste en realizar tus compras en https://www.recargafacil.cl solo con 1(un) click.</p><p>Para acceder esta forma de pago, debes empezar por elegir la opción Webpay Oneclick y completar el formulario con los datos de tu tarjeta de crédito por única vez. Los datos son ingresados sobre Webpay Plus(*) y se redireccionará a tu banco para ingresar las claves de seguridad correspondientes, por el monto de $1, el cual es solo referencial ya que no se verá reflejado en tu estado de cuenta(**). Desde ese momento, al elegir la opción Webpay Oneclick podrás realizar tus compras solo con presionar “Comprar”, solo con 1(un) click(***).</p><p>Solo podrás tener activa 1(una) tarjeta por cada cuenta de Recargafacil.cl que tengas. Si deseas terminar con este servicio solo debes desactivar tu tarjeta, en los datos de tu perfil o al realizar la próxima compra(****)</p><p>Solo podrás enrolar un producto con este medio de pago</p><p>(*) Webpay Plus, plataforma segura que cuenta con el respaldo de Transbank S.A.</p><p>(**) Solo la primera vez “te inscribes y compras” en la misma transacción.</p><p>(***) Aplica solo para ventas con tarjetas de crédito de emisores nacionales. No admite cuotas.</p><p>(****) Cada usuario es resposable de la seguridad de su contraseña.</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Recargar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
     <!-- JS -->
     <script src="js/bootstrap-select.js"></script>
@@ -855,6 +926,11 @@
     </script>
     <script>
       $('#myModal3').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+      })
+    </script>
+    <script>
+      $('#recargar').on('shown.bs.modal', function () {
       $('#myInput').focus()
       })
     </script>

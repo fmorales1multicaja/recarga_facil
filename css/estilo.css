@@ -208,6 +208,11 @@ a:hover .btn_serv {
 	background: #508CB6;
 }
 
+.btn-recarga:focus {
+	color: white;
+	background: #508CB6;
+}
+
 .instruccion_baja {
 	color: gray;
 	padding-bottom: 30px;
@@ -223,6 +228,21 @@ a:hover .btn_serv {
 .pregunta_tol button {
 	border:0px;
 	padding: 0px;
+}
+
+.tx_center {
+	text-align: center;
+}
+
+.caja_contenido{ 
+	padding: 10px 30px;
+	border: 1px solid lightgray;
+	margin: 10px 20px 0px 20px;
+	height: 100px;
+	overflow-y: scroll;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 .pregunta_tol .btn-default:hover {
@@ -1084,4 +1104,93 @@ footer.sin_linea {
 }
 .zonapuntos.solo {
 	height: 0px;
+}
+
+a.texto_celeste {
+	color:#64afe3;
+	text-decoration: none; 
+}
+
+.panel-default > .panel-heading {
+	background-color: white;
+}
+
+.panel-default {
+	border: 0px;
+}
+
+.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+	border: 0px;
+}
+
+.panel {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05);
+}
+.panel-body.terminos {
+	padding-top: 0px;
+}
+.panel-group.terminos {
+	margin-bottom: 0px;
+}
+
+.panel-title.tx_center.terminos {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+.web_pay{background-image:url("../imagenes/sec_web_pay.png");}
+.paga_facil{background-image:url("../imagenes/sec_paga_facil.png");}
+.multicaja{background-image:url("../imagenes/sec_multicaja.png");}
+.one_click{background-image:url("../imagenes/sec_web_pay_one_click.png");}
+.cencusud{background-image:url("../imagenes/sec_cencosud.png");}
+.paypal{background-image:url("../imagenes/sec_paypal.png");}
+
+.cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+    border: 3px solid #97ac01;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:170px;height:75px;
+    border: 3px solid white;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.drinkcard-cc:hover{
+    border: 3px solid #97ac01;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.medios_pago {
+	padding: 0px 12px;
+}
+
+p.tit_pagos {
+	font-size: 24px;
+}
+
+p.texto_pagos {
+	font-size: 20px;
+	padding-bottom: 25px;
+	line-height: 35px;
 }
